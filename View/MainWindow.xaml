@@ -5,8 +5,8 @@
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
         xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
-        xmlns:local="clr-namespace:View"
-        Title="Quản lý học sinh Trường THPT An Dương" Height="450" Width="725">
+        xmlns:local="clr-namespace:View" WindowStartupLocation="CenterScreen"
+        Title="Quản lý học sinh Trường THPT An Dương" Height="580" Width="920">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
