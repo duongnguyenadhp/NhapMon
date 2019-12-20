@@ -1,0 +1,97 @@
+﻿<dx:ThemedWindow x:Class="View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:local="clr-namespace:View"
+        Title="Quản lý học sinh Trường THPT An Dương" Height="450" Width="725">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <dxr:RibbonControl Grid.Row="0" RibbonStyle="Office2010">
+            <dxr:RibbonControl.ToolbarItems>
+                <dxb:BarButtonItemLink BarItemName="newItem"/>
+            </dxr:RibbonControl.ToolbarItems>
+            <dxr:RibbonDefaultPageCategory>
+                <dxr:RibbonPage Caption="Hệ thống">
+                    <dxr:RibbonPageGroup Caption="Tài khoản">
+                        <dxb:BarButtonItem Content="Thông tin tài khoản" RibbonStyle="Large" Glyph="{dx:DXImage Images/Comments/EditComment_32x32.png}"/>
+                        <dxb:BarButtonItem Content="Đăng xuất" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup Caption="Quản lý tài khoản">
+                        <dxb:BarButtonItem Content="Cập nhật tài khoản" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Phân quyền" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup Caption="Dữ liệu">
+                        <dxb:BarButtonItem Content="Sao lưu" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Phục hồi" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+                <dxr:RibbonPage Caption="Danh mục">
+                    <dxr:RibbonPageGroup Caption="Khối lớp">
+                        <dxb:BarButtonItem Content="Khối" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Lớp" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Lớp học" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup Caption="Giáo viên">
+                        <dxb:BarButtonItem Content="Giáo viên" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Chuyên môn" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup Caption="Môn học">
+                        <dxb:BarButtonItem Content="Ban học" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Môn học" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup Caption="Học tập">
+                        <dxb:BarButtonItem Content="Loại điểm" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Loại học lực" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Loại hạnh kiểm" RibbonStyle="Large"/>
+                     </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup Caption="Khác">
+                        <dxb:BarButtonItem Content="Trình độ học vấn" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Dân tộc" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+                <dxr:RibbonPage Caption="Hồ sơ học sinh">
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem Content="Cập nhật hồ sơ" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Tìm kiếm" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+                <dxr:RibbonPage Caption="Quản lý học tập">
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem Content="Phân lớp" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Điểm" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Điểm danh" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Khen thưởng" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Kỷ luật" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Lịch học" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Hạnh kiểm" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Tổng kết" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+                <dxr:RibbonPage Caption="Quản lý thu chi">
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem Content="Thu" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Chi" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+                <dxr:RibbonPage Caption="Báo cáo thống kê">
+
+                </dxr:RibbonPage>
+            </dxr:RibbonDefaultPageCategory>
+        </dxr:RibbonControl>
+        <dxr:RibbonStatusBarControl Grid.Row="2">
+            <dxr:RibbonStatusBarControl.RightItems>
+                <dxb:BarButtonItem x:Name="printItem" Content="Print" Glyph="{dx:DXImage Image=Print_16x16.png}"/>
+            </dxr:RibbonStatusBarControl.RightItems>
+        </dxr:RibbonStatusBarControl>
+        <Grid Grid.Row="1">
+            <local:UCKhoi></local:UCKhoi>
+        </Grid>
+    </Grid>
+</dx:ThemedWindow>
