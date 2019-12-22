@@ -43,7 +43,9 @@
     <Reference Include="DevExpress.Images.v19.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Mvvm.v19.1" />
+    <Reference Include="DevExpress.Mvvm.v19.1">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="DevExpress.Xpf.Themes.Office2016White.v19.1" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -64,11 +66,41 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewDanhMuc\UCChuyenMon.xaml.cs">
+      <DependentUpon>UCChuyenMon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDanhMuc\UCGiaoVien.xaml.cs">
+      <DependentUpon>UCGiaoVien.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewDanhMuc\UCKhoi.xaml.cs">
       <DependentUpon>UCKhoi.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewDanhMuc\UCLop.xaml.cs">
       <DependentUpon>UCLop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDanhMuc\UCLopHoc.xaml.cs">
+      <DependentUpon>UCLopHoc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHoSoHocSinh\UCHoSoHocSinh.xaml.cs">
+      <DependentUpon>UCHoSoHocSinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewQuanLyHocTap\UCDiem.xaml.cs">
+      <DependentUpon>UCDiem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewQuanLyHocTap\UCDiemDanh.xaml.cs">
+      <DependentUpon>UCDiemDanh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewQuanLyHocTap\UCLichHoc.xaml.cs">
+      <DependentUpon>UCLichHoc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewQuanLyHocTap\UCPhanLop.xaml.cs">
+      <DependentUpon>UCPhanLop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewQuanLyHocTap\ViewTongKet.xaml.cs">
+      <DependentUpon>ViewTongKet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewThuChi\UCThu.xaml.cs">
+      <DependentUpon>UCThu.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -82,11 +114,51 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ViewDanhMuc\UCChuyenMon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewDanhMuc\UCGiaoVien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewDanhMuc\UCKhoi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewDanhMuc\UCLop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewDanhMuc\UCLopHoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewHoSoHocSinh\UCHoSoHocSinh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewQuanLyHocTap\UCDiem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewQuanLyHocTap\UCDiemDanh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewQuanLyHocTap\UCLichHoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewQuanLyHocTap\UCPhanLop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewQuanLyHocTap\ViewTongKet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewThuChi\UCThu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -118,6 +190,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

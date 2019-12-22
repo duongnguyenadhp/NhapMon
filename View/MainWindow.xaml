@@ -6,7 +6,8 @@
         xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
         xmlns:local="clr-namespace:View" WindowStartupLocation="CenterScreen"
-        Title="Quản lý học sinh Trường THPT An Dương" Height="580" Width="920">
+        Title="Quản lý học sinh Trường THPT An Dương" Height="580" Width="920" MaxHeight="720"  
+                 MaxWidth="1020">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -91,7 +92,7 @@
             </dxr:RibbonStatusBarControl.RightItems>
         </dxr:RibbonStatusBarControl>
         <Grid Grid.Row="1">
-            <local:UCKhoi></local:UCKhoi>
+            <local:UCHoSoHocSinh></local:UCHoSoHocSinh>
         </Grid>
     </Grid>
 </dx:ThemedWindow>

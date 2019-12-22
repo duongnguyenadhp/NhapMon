@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\GitClone\NhapMon\View\obj\Debug\
+C:\Users\Nguyen-PC\source\repos\NhapMon\View\obj\Debug\
 View
 none
 false
 DEBUG;TRACE
-D:\GitClone\NhapMon\View\App.xaml
-3-433742344
+C:\Users\Nguyen-PC\source\repos\NhapMon\View\App.xaml
+13583624696
 
-11-1904994293
+18269030674
 19-752884903
-MainWindow.xaml;ViewDanhMuc\UCKhoi.xaml;ViewDanhMuc\UCLop.xaml;
+MainWindow.xaml;ViewDanhMuc\UCChuyenMon.xaml;ViewDanhMuc\UCGiaoVien.xaml;ViewDanhMuc\UCKhoi.xaml;ViewDanhMuc\UCLop.xaml;ViewDanhMuc\UCLopHoc.xaml;ViewHoSoHocSinh\UCHoSoHocSinh.xaml;ViewQuanLyHocTap\UCDiem.xaml;ViewQuanLyHocTap\UCDiemDanh.xaml;ViewQuanLyHocTap\UCLichHoc.xaml;ViewQuanLyHocTap\UCPhanLop.xaml;ViewQuanLyHocTap\ViewTongKet.xaml;ViewThuChi\UCThu.xaml;
 
-False
+True
 

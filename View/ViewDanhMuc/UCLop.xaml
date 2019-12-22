@@ -9,28 +9,40 @@
              d:DesignHeight="420" d:DesignWidth="920">
     <StackPanel Background="Gray">
         <GroupBox Header="Thao tác" HorizontalAlignment="Center" 
-                  Height="88" Margin="10,10,0,0" VerticalAlignment="Top" Width="780">
-            <WrapPanel>
-                <Label Content="Mã khối" Margin="10 10 0 0"/>
-                <TextBox Width="200" Margin="10 10 0 0"/>
-                <Label Content="Tên khối" Margin="10 10 0 0"/>
-                <TextBox Width="200" Margin="10 10 0 0"/>
-                <dx:SimpleButton x:Name="btnThem"  Margin="10 10 0 0"
-                                 Content="Thêm" Width="55"/>
-                <dx:SimpleButton x:Name="btnSua"  Margin="10 10 0 0"
-                                 Content="Sửa" Width="55"/>
-                <dx:SimpleButton x:Name="btnXo"  Margin="10 10 0 0"
-                                 Content="Xóa" Width="55"/>
+                  Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="780">
+            <StackPanel>
+                <WrapPanel>
+                    <Label Content="Tên khối" Margin="10 10 0 0"/>
+                    <ComboBox Width="200" Margin="10 10 0 0"/>
+                    <Label Content="Mã lớp" Margin="10 10 0 0"/>
+                    <TextBox Width="150" Margin="10 10 0 0"/>
+                    <Label Content="Tên lớp" Margin="10 10 0 0"/>
+                    <TextBox Width="200" Margin="10 10 0 0"/>
 
-            </WrapPanel>
+
+                </WrapPanel>
+                <StackPanel Height="40" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <dx:SimpleButton x:Name="btnThem" Height="20"
+                                     Margin="5 0 0 0"
+                                 Content="Thêm" Width="55"/>
+                    <dx:SimpleButton x:Name="btnSua" Height="20"
+                                     Margin="5 0 0 0"
+                                 Content="Sửa" Width="55"/>
+                    <dx:SimpleButton x:Name="btnXoa" Height="20"
+                                     Margin="5 0 0 0"
+                                 Content="Xóa" Width="55"/>
+                    
+                </StackPanel>
+            </StackPanel>
         </GroupBox>
         <GroupBox Header="Danh sách khối" VerticalAlignment="Bottom" HorizontalAlignment="Center" 
                   Margin="10 10 0 10" Width="780" Height="280">
             <ListView>
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="Mã khối" Width="150"></GridViewColumn>
-                        <GridViewColumn Header="Tên khối" Width="500"></GridViewColumn>
+                        <GridViewColumn Header="Khối" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Mã lớp" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Tên lớp" Width="500"></GridViewColumn>
                     </GridView>
                 </ListView.View>
             </ListView>
