@@ -81,6 +81,9 @@
     <Compile Include="ViewDanhMuc\UCLopHoc.xaml.cs">
       <DependentUpon>UCLopHoc.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewGiangDay\UCPhanCongChuNhiem.xaml.cs">
+      <DependentUpon>UCPhanCongChuNhiem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewHoSoHocSinh\UCHoSoHocSinh.xaml.cs">
       <DependentUpon>UCHoSoHocSinh.xaml</DependentUpon>
     </Compile>
@@ -131,6 +134,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewDanhMuc\UCLopHoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewGiangDay\UCPhanCongChuNhiem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -190,7 +197,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

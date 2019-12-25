@@ -21,12 +21,12 @@
             <dxr:RibbonDefaultPageCategory>
                 <dxr:RibbonPage Caption="Hệ thống">
                     <dxr:RibbonPageGroup Caption="Tài khoản">
-                        <dxb:BarButtonItem Content="Thông tin tài khoản" RibbonStyle="Large" Glyph="{dx:DXImage Images/Comments/EditComment_32x32.png}"/>
+                        <dxb:BarButtonItem Content="Đăng nhập" RibbonStyle="Large" Glyph="{dx:DXImage Images/Comments/EditComment_32x32.png}"/>
+                        <dxb:BarButtonItem Content="Đổi mật khẩu" RibbonStyle="Large" Glyph="{dx:DXImage Images/Comments/EditComment_32x32.png}"/>
                         <dxb:BarButtonItem Content="Đăng xuất" RibbonStyle="Large"/>
                     </dxr:RibbonPageGroup>
-                    <dxr:RibbonPageGroup Caption="Quản lý tài khoản">
-                        <dxb:BarButtonItem Content="Cập nhật tài khoản" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Phân quyền" RibbonStyle="Large"/>
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem Content="Phân quyền người dùng" RibbonStyle="Large"/>
                     </dxr:RibbonPageGroup>
                     <dxr:RibbonPageGroup Caption="Dữ liệu">
                         <dxb:BarButtonItem Content="Sao lưu" RibbonStyle="Large"/>
@@ -37,7 +37,6 @@
                     <dxr:RibbonPageGroup Caption="Khối lớp">
                         <dxb:BarButtonItem Content="Khối" RibbonStyle="Large"/>
                         <dxb:BarButtonItem Content="Lớp" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Lớp học" RibbonStyle="Large"/>
                     </dxr:RibbonPageGroup>
                     <dxr:RibbonPageGroup Caption="Giáo viên">
                         <dxb:BarButtonItem Content="Giáo viên" RibbonStyle="Large"/>
@@ -48,37 +47,45 @@
                         <dxb:BarButtonItem Content="Môn học" RibbonStyle="Large"/>
                     </dxr:RibbonPageGroup>
                     <dxr:RibbonPageGroup Caption="Học tập">
-                        <dxb:BarButtonItem Content="Loại điểm" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Loại học lực" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Xếp loại" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Điểm" RibbonStyle="Large"/>
                         <dxb:BarButtonItem Content="Loại hạnh kiểm" RibbonStyle="Large"/>
                      </dxr:RibbonPageGroup>
                     <dxr:RibbonPageGroup Caption="Khác">
-                        <dxb:BarButtonItem Content="Trình độ học vấn" RibbonStyle="Large"/>
                         <dxb:BarButtonItem Content="Dân tộc" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Trình độ học vấn" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Tình trạng hồ sơ" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Loại phiếu thu" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Loại phiếu điểm danh" RibbonStyle="Large"/>
                     </dxr:RibbonPageGroup>
                 </dxr:RibbonPage>
                 <dxr:RibbonPage Caption="Hồ sơ học sinh">
                     <dxr:RibbonPageGroup Caption="">
-                        <dxb:BarButtonItem Content="Cập nhật hồ sơ" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Tìm kiếm" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Cập nhật hồ sơ học sinh" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Cập nhật trạng thái hồ sơ" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Phân lớp học sinh" RibbonStyle="Large"/>
                     </dxr:RibbonPageGroup>
                 </dxr:RibbonPage>
-                <dxr:RibbonPage Caption="Quản lý học tập">
+                <dxr:RibbonPage Caption="Giảng dạy">
                     <dxr:RibbonPageGroup Caption="">
-                        <dxb:BarButtonItem Content="Phân lớp" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Điểm" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Điểm danh" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Khen thưởng" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Kỷ luật" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Lịch học" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Hạnh kiểm" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Phân công chủ nhiệm lớp" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Phân công giảng dạy" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+                <dxr:RibbonPage Caption="Học tập">
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem Content="Cập nhật điểm" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Cập nhật điểm danh" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Cập nhật khen thưởng" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Cập nhật kỷ luật" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Cập nhật hạnh kiểm" RibbonStyle="Large"/>
                         <dxb:BarButtonItem Content="Tổng kết" RibbonStyle="Large"/>
                     </dxr:RibbonPageGroup>
                 </dxr:RibbonPage>
                 <dxr:RibbonPage Caption="Quản lý thu chi">
                     <dxr:RibbonPageGroup Caption="">
-                        <dxb:BarButtonItem Content="Thu" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Chi" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Quản lý thu" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="Quản lý chi" RibbonStyle="Large"/>
                     </dxr:RibbonPageGroup>
                 </dxr:RibbonPage>
                 <dxr:RibbonPage Caption="Báo cáo thống kê">

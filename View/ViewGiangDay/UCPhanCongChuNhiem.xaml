@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="View.UCPhanCongChuNhiem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:View"
+             mc:Ignorable="d" 
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             d:DesignHeight="420" d:DesignWidth="920">
+    <Grid Background="Gray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <GroupBox Margin="5" Header="Phân công giáo viên">
+            <ListView>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="STT" Width="50"></GridViewColumn>
+                        <GridViewColumn Header="Khối" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Lớp" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Năm học" Width="80"></GridViewColumn>
+                        <GridViewColumn Header="Giáo viên" Width="150"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </GroupBox>
+        <GroupBox Header="Thao tác" Grid.Column="1" Margin="5">
+            <StackPanel>
+                <Grid Height="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Khối:" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"></Label>
+                    <ComboBox Grid.Column="1" Margin="3"></ComboBox>
+                </Grid>
+                <Grid Height="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Lớp:" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"></Label>
+                    <ComboBox Grid.Column="1" Margin="3"></ComboBox>
+                </Grid>
+                <Grid Height="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Giáo viên:" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"></Label>
+                    <TextBox Grid.Column="1" Margin="3"></TextBox>
+                </Grid>
+                <Grid Height="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <dx:SimpleButton Content="Tìm" Grid.Column="1" Margin="3"></dx:SimpleButton>
+                </Grid>
+                <Grid Height="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Năm học:" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"></Label>
+                    <TextBox Grid.Column="1" IsEnabled="False" Text="2019" Margin="3"></TextBox>
+                </Grid>
+                <Grid Margin="0 10 0 0" Height="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <dx:SimpleButton Margin="3" Content="Thêm"></dx:SimpleButton>
+                    <dx:SimpleButton Margin="3" Content="Sửa" Grid.Column="1"></dx:SimpleButton>
+                    <dx:SimpleButton Margin="3" Content="Xóa" Grid.Column="2"></dx:SimpleButton>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>
