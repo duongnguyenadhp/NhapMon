@@ -27,17 +27,17 @@
                     <ComboBox Width="100" Height="25" Margin="10 0 0 0"></ComboBox>
                     <dx:SimpleButton Content="Chọn" Height="20" Margin="10 0 0 0"></dx:SimpleButton>
                 </StackPanel>
-                <ListView Grid.Row="1">
+                <ListView Name="lvDiem" Grid.Row="1" SelectionChanged="lvDiem_SelectionChanged">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="STT" Width="50"></GridViewColumn>
-                            <GridViewColumn Header="Mã" Width="50"></GridViewColumn>
-                            <GridViewColumn Header="Tên" Width="150"></GridViewColumn>
-                            <GridViewColumn Header="CMND" Width="100"></GridViewColumn>
-                            <GridViewColumn Header="Giới tính" Width="50"></GridViewColumn>
-                            <GridViewColumn Header="Dân tộc" Width="50"></GridViewColumn>
-                            <GridViewColumn Header="Ngày sinh" Width="80"></GridViewColumn>
-                            <GridViewColumn Header="Địa chỉ" Width="100"></GridViewColumn>
+                            <!--<GridViewColumn Header="STT" DisplayMemberBinding="{Binding}" Width="50"></GridViewColumn>-->
+                            <GridViewColumn Header="Mã" DisplayMemberBinding="{Binding MaHS}" Width="50"></GridViewColumn>
+                            <GridViewColumn Header="Tên" DisplayMemberBinding="{Binding TenHS}" Width="150"></GridViewColumn>
+                            <GridViewColumn Header="CMND" DisplayMemberBinding="{Binding CMND}" Width="100"></GridViewColumn>
+                            <GridViewColumn Header="Giới tính" DisplayMemberBinding="{Binding GioiTinh2}" Width="50"></GridViewColumn>
+                            <GridViewColumn Header="Dân tộc" DisplayMemberBinding="{Binding TenDT}" Width="50"></GridViewColumn>
+                            <GridViewColumn Header="Ngày sinh" DisplayMemberBinding="{Binding NgaySinh}" Width="80"></GridViewColumn>
+                            <GridViewColumn Header="Địa chỉ" DisplayMemberBinding="{Binding DiaChi}" Width="100"></GridViewColumn>
                         </GridView>
                     </ListView.View>
                 </ListView>

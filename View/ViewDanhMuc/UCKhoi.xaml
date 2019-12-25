@@ -12,25 +12,25 @@
                   Height="88" Margin="10,10,0,0" VerticalAlignment="Top" Width="780">
             <WrapPanel>
                 <Label Content="Mã khối" Margin="10 10 0 0"/>
-                <TextBox Width="200" Margin="10 10 0 0"/>
+                <TextBox Name="tbMaKhoi" Width="200" Margin="10 10 0 0"/>
                 <Label Content="Tên khối" Margin="10 10 0 0"/>
-                <TextBox Width="200" Margin="10 10 0 0"/>
+                <TextBox Name="tbTenKhoi" Width="200" Margin="10 10 0 0"/>
                 <dx:SimpleButton x:Name="btnThem"  Margin="10 10 0 0"
-                                 Content="Thêm" Width="55"/>
+                                 Content="Thêm" Width="55" Click="btnThem_Click"/>
                 <dx:SimpleButton x:Name="btnSua"  Margin="10 10 0 0"
                                  Content="Sửa" Width="55"/>
                 <dx:SimpleButton x:Name="btnXo"  Margin="10 10 0 0"
-                                 Content="Xóa" Width="55"/>
+                                 Content="Xóa" Width="55" Click="btnXo_Click"/>
 
             </WrapPanel>
         </GroupBox>
         <GroupBox Header="Danh sách khối" VerticalAlignment="Bottom" HorizontalAlignment="Center" 
                   Margin="10 10 0 10" Width="780" Height="280">
-            <ListView>
+            <ListView Name="lvKhoi" SelectionChanged="lvKhoi_SelectionChanged">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="Mã khối" Width="150"></GridViewColumn>
-                        <GridViewColumn Header="Tên khối" Width="500"></GridViewColumn>
+                        <GridViewColumn Header="Mã khối" DisplayMemberBinding="{Binding MaKhoi}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Tên khối" DisplayMemberBinding="{Binding TenKhoi}" Width="500"></GridViewColumn>
                     </GridView>
                 </ListView.View>
             </ListView>

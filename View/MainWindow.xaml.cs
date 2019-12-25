@@ -24,5 +24,10 @@ namespace View
         {
             InitializeComponent();
         }
+
+        private void UCPhanCongChuNhiem_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

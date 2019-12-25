@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5049a1a04b004319882ccd265c2e5835" Name="Diagram1">
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.BanHoc" Width="1.5" PointX="3.75" PointY="37.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.ChiTietPhieuChi" Width="1.5" PointX="5.25" PointY="41.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.ChiTietPhieuThu" Width="1.5" PointX="5.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.ChuNhiemLop" Width="1.5" PointX="11" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.DanToc" Width="1.5" PointX="0.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.Diem" Width="1.5" PointX="6" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.DiemTongKet" Width="1.5" PointX="8.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.GiaoVien" Width="1.5" PointX="8.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.HanhKiem" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.HocSinh" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.KhenThuong" Width="1.5" PointX="5.25" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.Khoi" Width="1.5" PointX="1.5" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.KyLuat" Width="1.5" PointX="5.25" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.LoaiHanhKiem" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.LoaiPhieuDiemDanh" Width="1.5" PointX="6" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.LoaiPhieuThu" Width="1.5" PointX="0.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.LoaiTinhTrangHoSo" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.Lop" Width="1.5" PointX="0.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.LopHoc" Width="1.5" PointX="5.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.MonHoc" Width="1.5" PointX="6" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.NguoiThan" Width="1.5" PointX="5.25" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.PhanCongGiangDay" Width="1.5" PointX="11" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.PhieuChi" Width="1.5" PointX="3" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.PhieuDiemDanh" Width="1.5" PointX="8.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.PhieuThu" Width="1.5" PointX="3" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.TrinhDoHocVan" Width="1.5" PointX="8.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.XepLoai" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.BangDiem" Width="1.5" PointX="8.25" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.ChuyenMon" Width="1.5" PointX="11" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="csdl_nhapmoncnpmModel.TinhTrangHoSo" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__MonHoc__MaBan__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__ChiTietPh__MaPhi__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__ChiTietPh__MaPhi__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__ChiTietPhi__MaHS__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__ChuNhiemL__MaLop__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__ChuNhiemLo__MaGV__07C12930" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__HocSinh__MaDT__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__BangDiem__MaDiem__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__DiemTongK__MaXep__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__DiemTongKe__MaHS__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__ChuyenMon__MaGV__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__PhanCongGi__MaGV__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__HanhKiem__MaHS__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__HanhKiem__MaLoai__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__BangDiem__MaHS__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__KhenThuong__MaHS__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__KyLuat__MaHS__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__LopHoc__MaHS__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__NguoiThan__MaHS__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__PhieuDiemD__MaHS__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__TinhTrangH__MaHS__08B54D69" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__Lop__MaKhoi__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__PhieuDiem__MaLoa__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__PhieuThu__MaLoai__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__TinhTrang__MaLoa__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__LopHoc__MaLop__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__PhanCongG__MaLop__03F0984C" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__PhieuChi__MaLop__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__PhieuThu__MaLop__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__BangDiem__MaMon__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__PhanCongG__MaMon__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="csdl_nhapmoncnpmModel.FK__ChuyenMon__MaTri__6FE99F9F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

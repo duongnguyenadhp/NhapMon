@@ -13,29 +13,20 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <GroupBox Margin="5" Header="Phân công giáo viên">
-            <ListView>
+            <ListView Name="lvPCCN" >
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="STT" Width="50"></GridViewColumn>
-                        <GridViewColumn Header="Khối" Width="150"></GridViewColumn>
-                        <GridViewColumn Header="Lớp" Width="150"></GridViewColumn>
-                        <GridViewColumn Header="Năm học" Width="80"></GridViewColumn>
-                        <GridViewColumn Header="Giáo viên" Width="150"></GridViewColumn>
+                        
+                        <GridViewColumn Header="Lớp" DisplayMemberBinding="{Binding TenLop}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Học Kỳ" DisplayMemberBinding="{Binding HocKy}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Năm học" DisplayMemberBinding="{Binding NamHoc}" Width="80"></GridViewColumn>
+                        <GridViewColumn Header="Giáo viên" DisplayMemberBinding="{Binding TenGV}" Width="150"></GridViewColumn>
                     </GridView>
                 </ListView.View>
             </ListView>
         </GroupBox>
         <GroupBox Header="Thao tác" Grid.Column="1" Margin="5">
             <StackPanel>
-                <Grid Height="30">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.4*"></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Khối:" HorizontalAlignment="Center"
-                           VerticalAlignment="Center"></Label>
-                    <ComboBox Grid.Column="1" Margin="3"></ComboBox>
-                </Grid>
                 <Grid Height="30">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.4*"></ColumnDefinition>
@@ -50,11 +41,20 @@
                         <ColumnDefinition Width="0.4*"></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
+                    <Label Content="Học Kỳ:" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"></Label>
+                    <ComboBox Grid.Column="1" Margin="3"></ComboBox>
+                </Grid>
+                <Grid Height="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
                     <Label Content="Giáo viên:" HorizontalAlignment="Center"
                            VerticalAlignment="Center"></Label>
                     <TextBox Grid.Column="1" Margin="3"></TextBox>
                 </Grid>
-                <Grid Height="30">
+                <Grid Height="3">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.4*"></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>

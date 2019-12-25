@@ -99,7 +99,7 @@
             </dxr:RibbonStatusBarControl.RightItems>
         </dxr:RibbonStatusBarControl>
         <Grid Grid.Row="1">
-            <local:UCHoSoHocSinh></local:UCHoSoHocSinh>
+            <local:UCThu Loaded="UCPhanCongChuNhiem_Loaded"></local:UCThu>
         </Grid>
     </Grid>
 </dx:ThemedWindow>

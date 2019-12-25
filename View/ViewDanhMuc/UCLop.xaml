@@ -37,12 +37,12 @@
         </GroupBox>
         <GroupBox Header="Danh sách khối" VerticalAlignment="Bottom" HorizontalAlignment="Center" 
                   Margin="10 10 0 10" Width="780" Height="280">
-            <ListView>
+            <ListView Name="lvLop" SelectionChanged="ListView_SelectionChanged">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="Khối" Width="150"></GridViewColumn>
-                        <GridViewColumn Header="Mã lớp" Width="150"></GridViewColumn>
-                        <GridViewColumn Header="Tên lớp" Width="500"></GridViewColumn>
+                        <GridViewColumn Header="Khối" DisplayMemberBinding="{Binding MaKhoi}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Mã lớp" DisplayMemberBinding="{Binding MaLop}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Tên lớp" DisplayMemberBinding="{Binding TenLop}" Width="500"></GridViewColumn>
                     </GridView>
                 </ListView.View>
             </ListView>

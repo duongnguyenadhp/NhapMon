@@ -13,7 +13,7 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <GroupBox Margin="5" Header="Danh sách giáo viên">
-            <ListView>
+            <ListView SelectionChanged="ListView_SelectionChanged">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="Mã" Width="50"></GridViewColumn>

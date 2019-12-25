@@ -27,15 +27,15 @@
                     <ComboBox Width="100" Height="25" Margin="10 0 0 0"></ComboBox>
                     <dx:SimpleButton Content="Chọn" Height="20" Margin="10 0 0 0"></dx:SimpleButton>
                 </StackPanel>
-                <ListView Grid.Row="1">
+                <ListView Name="lvThu" Grid.Row="1" SelectionChanged="lvThu_SelectionChanged">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="STT" Width="50"></GridViewColumn>
-                            <GridViewColumn Header="Mã phiếu" Width="100"></GridViewColumn>
-                            <GridViewColumn Header="Tên phiếu" Width="150"></GridViewColumn>
-                            <GridViewColumn Header="Ngày tạo" Width="100"></GridViewColumn>
-                            <GridViewColumn Header="Tổng thu" Width="100"></GridViewColumn>
-                            <GridViewColumn Header="Tình trạng" Width="150"></GridViewColumn>
+                            <!--<GridViewColumn Header="STT" DisplayMemberBinding="{Binding }" Width="50"></GridViewColumn>-->
+                            <GridViewColumn Header="Mã phiếu" DisplayMemberBinding="{Binding MaPhieuThu}" Width="100"></GridViewColumn>
+                            <GridViewColumn Header="Tên phiếu" DisplayMemberBinding="{Binding TenLoaiPhieuThu}" Width="150"></GridViewColumn>
+                            <GridViewColumn Header="Ngày tạo" DisplayMemberBinding="{Binding  NgayTaoPhieu}" Width="100"></GridViewColumn>
+                            <GridViewColumn Header="Tổng thu" DisplayMemberBinding="{Binding  SoTienThu}" Width="100"></GridViewColumn>
+                            <GridViewColumn Header="Tình trạng" DisplayMemberBinding="{Binding TinhTrang}" Width="150"></GridViewColumn>
                         </GridView>
                     </ListView.View>
                 </ListView>

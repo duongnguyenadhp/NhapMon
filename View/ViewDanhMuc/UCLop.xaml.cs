@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VMHelper;
 
 namespace View
 {
@@ -20,9 +22,18 @@ namespace View
     /// </summary>
     public partial class UCLop : UserControl
     {
+        csdl_nhapmoncnpmEntities db = new csdl_nhapmoncnpmEntities();
+        ObservableCollection<Lop> DSLop { get; set; }
         public UCLop()
         {
             InitializeComponent();
+            DSLop = new ObservableCollection<Lop>(db.Lops.ToList());
+            lvLop.ItemsSource = DSLop;
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace View.ViewQuanLyHocTap
+namespace View
 {
     /// <summary>
     /// Interaction logic for ViewTongKet.xaml
